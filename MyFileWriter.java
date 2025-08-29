@@ -2,7 +2,7 @@ import java.io.*;
 import java.nio.file.*;
 import java.nio.charset.StandardCharsets;
 
-public class MyFileWriter {
+public class MyFileWriter { buggy
     public static void main(String[] args) {
         String data = "Hello, World!";
         String fileName1 = "example.txt";
@@ -44,6 +44,6 @@ public class MyFileWriter {
             Files.write(Paths.get(fileName5), data.getBytes(StandardCharsets.UTF_8));
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        } 
     }
 }
